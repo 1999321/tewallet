@@ -7,9 +7,43 @@
       "sharedGlobals"
     ],
     "production": [
-      "default"
+      "default",
+      "!{projectRoot}/**/?(*.)+(spec|test).[jt]s?(x)?(.snap)",
+      "!{projectRoot}/tsconfig.spec.json"
     ],
     "sharedGlobals": []
   },
-  "nxCloudAccessToken": "Yjg4MjE3YTAtODI0ZC00ZjM0LWFmMzktZTc5ZTIzNjdiYjQ0fHJlYWQtd3JpdGU="
+  "targetDefaults": {
+    "build": {
+      "dependsOn": [
+        "^build",
+        "typecheck"
+      ],
+      "cache": true
+    },
+    "typecheck": {
+      "cache": true
+    },
+    "lint": {
+      "cache": true
+    }
+  },
+  "nxCloudAccessToken": "YTYzMWViYTEtMGU0Mi00YjhkLTllZTQtOWFhZTRjYWZjNzAyfHJlYWQtd3JpdGU=",
+  "plugins": [
+    {
+      "plugin": "@nx/vite/plugin",
+      "options": {
+        "buildTargetName": "vite:build",
+        "testTargetName": "test",
+        "serveTargetName": "serve",
+        "previewTargetName": "vite:preview",
+        "serveStaticTargetName": "serve-static"
+      }
+    }
+  ],
+  "release": {
+    "projects": [
+      "packages/*"
+    ]
+  }
 }
