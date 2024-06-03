@@ -3,7 +3,10 @@
 import React from 'react'
 
 export const WindowUI = () => {
-    console.log("windows:", window)
+    if (typeof window === 'undefined') {
+        return <div>Window is undefined</div>
+    } else
+        console.log("windows:", window)
     return (
         <div>WindowUI</div>
     )
