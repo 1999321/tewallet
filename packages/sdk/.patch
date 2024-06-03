@@ -1,0 +1,2 @@
+1. ts-patch for ttypescript: https://github.com/cevek/ttypescript/issues/140. 
+    scripts: ttsc --project tsconfig.declarations.json => tspc --project tsconfig.declarations.json
