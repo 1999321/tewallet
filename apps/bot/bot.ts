@@ -12,6 +12,11 @@ const bot = new Telegraf(TOKEN);
     
 // }));
 
-bot.start((ctx) => ctx.reply('Welcome'))
+async function botStart(){
+    console.log("Bot started")
+    await bot.start((ctx) => ctx.reply('Welcome'))
+    await bot.launch();
+    console.log("Bot launched")
+}
 
-bot.launch();
+botStart();
