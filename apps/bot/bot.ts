@@ -4,28 +4,12 @@ const bot = new Telegraf(TOKEN);
 
 const web_link = "https://tewallet-sdk.vercel.app/"
 
-// bot.start((ctx) => ctx.reply("Welcome", {
-//     reply_markup: {
-//         inline_keyboard: [
-//             [{ text: "Click me", callback_data: "click" }]
-//         ]
-        
-//     },
-    
-// }));
+bot.start((ctx) =>
+    ctx.reply("Welcome :)))))", {
+      reply_markup: {
+        keyboard: [[{ text: "web app", web_app: { url: web_link } }]],
+      },
+    })
+);
 
-async function botStart(){
-    console.log("Bot start")
-    await bot.start((ctx) =>
-        ctx.reply("Welcome :)))))", {
-          reply_markup: {
-            keyboard: [[{ text: "web app", web_app: { url: web_link } }]],
-          },
-        })
-    );
-    console.log("starting process")
-    await bot.launch();
-    console.log("Bot launched")
-}
-
-botStart();
+bot.launch();
