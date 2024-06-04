@@ -1,3 +1,4 @@
+import { WebApp } from "@/components/WebApp/WebApp";
 import Image from "next/image";
 
 export default function Home() {
@@ -56,6 +57,8 @@ export default function Home() {
             Find in-depth information about Next.js features and API.
           </p>
         </a>
+
+        <WebApp />
 
         <a
           href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
