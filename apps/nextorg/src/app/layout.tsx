@@ -19,6 +19,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <Script src="https://telegram.org/js/telegram-web-app.js"></Script>
+        <Script src="https://cdn.jsdelivr.net/npm/eruda"></Script>
       </head>
       <body className={inter.className}>{children}</body>
     </html>
