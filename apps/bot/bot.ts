@@ -1,10 +1,11 @@
 import { Telegraf, Markup } from "telegraf";
 import { link } from "telegraf/format";
-const TOKEN = "7065964902:AAF0MMvzoq4ZqQM3ZnnVQgFxgykUXnNjtUw"
+const TOKEN = "7147616693:AAHeYlmQW7RRJj9DJeRcg8Rw3wa3qS3sSYI"
 const bot = new Telegraf(TOKEN);
 
 //const WEB_APP_URL = "https://tewallet-sdk.vercel.app/"
-const WEB_APP_URL = "https://passkey-demo.zerodev.app/"
+//const WEB_APP_URL = "https://passkey-demo.zerodev.app/"
+const WEB_APP_URL = "https://tewallet-sdk-dgqj.vercel.app/"
 
 bot.start((ctx) =>
     ctx.reply("Welcome :)))))", {
