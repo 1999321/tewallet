@@ -5,7 +5,8 @@ const bot = new Telegraf(TOKEN);
 
 //const WEB_APP_URL = "https://tewallet-sdk.vercel.app/"
 //const WEB_APP_URL = "https://passkey-demo.zerodev.app/"
-const WEB_APP_URL = "https://webauthn.passwordless.id/demos/basic.html"
+// const WEB_APP_URL = "https://webauthn.passwordless.id/demos/basic.html"
+const WEB_APP_URL = "https://wallet.tx.xyz/"
 
 bot.start((ctx) =>
     ctx.reply("Welcome :)))))", {
